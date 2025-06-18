@@ -32,8 +32,8 @@ body {
 
 @media (max-width: 600px) {
     .avatar {
-        width: 300px;
-        height: 300px;
+        width: 85vw;
+        height: 85vw;
     }
 
     .title-h1 {
