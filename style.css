@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter.ttf) format("truetype");
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.main{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar{
+    width: 384px;
+    height: 384px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.title{
+    font-size: 28px;
+    color: #FFFFFF;
+}
