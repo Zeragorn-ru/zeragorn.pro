@@ -29,3 +29,14 @@ body {
     font-size: 20px;
     color: #FFFFFF;
 }
+
+@media (max-width: 600px) {
+    .avatar {
+        width: 192px;
+        height: 192px;
+    }
+
+    .header-text h1 {
+        font-size: 16px;
+    }
+}
