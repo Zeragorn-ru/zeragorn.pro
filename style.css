@@ -36,7 +36,11 @@ body {
         height: 250px;
     }
 
-    .title h1 {
+    .title-h1 {
         font-size: 18px;
+    }
+    
+    .title-h3{
+        font-size: 16px
     }
 }
