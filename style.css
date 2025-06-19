@@ -37,6 +37,10 @@ body {
         height: 85vw;
     }
 
+    .title{
+        aling-text: center;
+    }
+
     .title-h1 {
         font-size: 18px;
     }
