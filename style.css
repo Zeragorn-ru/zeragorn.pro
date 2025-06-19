@@ -32,18 +32,14 @@ body {
 }
 
 @media (max-width: 600px) {
-    /*
+    
     .main{
         text-align: center;
     }
-    */
+    
     .avatar {
         width: 85vw;
         height: 85vw;
-    }
-
-    .title{
-        text-aling: center;
     }
 
     .title-h1 {
