@@ -71,10 +71,10 @@ body {
 .card1 .example, .card1 .github {
     flex: 1 1 auto;
     max-width: 100px;
-    border: 2px solid #292929;
+    border: 2px solid #29292980;
     padding: 7px;
     border-radius: 10px;
-    background-color: #1a1a1a;
+    background-color: #1a1a1a80;
     color: #ffffff;
     display: flex;
     align-items: center;
