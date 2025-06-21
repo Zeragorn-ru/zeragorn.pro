@@ -20,7 +20,7 @@ body {
     border: 3px solid  #1d1d1d; /*1d1d1d*/
     max-width: 1100px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     background: radial-gradient(circle at 100% 10%, #52fc03ca, #0f0f0fca 30%);
     box-sizing: border-box;
 }
@@ -38,6 +38,33 @@ body {
     margin: auto;
 }
 
+.title > * {
+    margin: 10px 10px 10px 10px;
+}
+
+.soc_net > * {
+    max-width: 100px;
+    border: 2px solid #29292980;
+    padding: 7px;
+    border-radius: 12px;
+    background-color: #0f0f0fca;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    margin-top: auto
+}
+
+.soc_net > * > * {
+    width: 36px;
+    height: 36px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +79,7 @@ body {
     border: 3px solid #1d1d1d;
     max-width: 550px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #0f0f0fca;
     box-sizing: border-box;
     font-size: 18px;
@@ -75,7 +102,7 @@ body {
     justify-content: flex-start;
     gap: 20px;
     max-width: 500px;
-    margin-top: auto
+    margin-top: auto;
 }
 
 .card1 .example, .card1 .github {
@@ -83,7 +110,7 @@ body {
     max-width: 100px;
     border: 2px solid #29292980;
     padding: 7px;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #1a1a1a80;
     display: flex;
     align-items: center;
