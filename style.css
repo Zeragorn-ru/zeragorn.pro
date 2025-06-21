@@ -51,8 +51,12 @@ body {
     box-sizing: border-box;
 }
 
-.card h2 {
+.cards > * h2 {
     margin-top: 0;
+}
+
+.card1{
+    background: radial-gradient(circle at 0% 0%, #ffe601ad, #000000 40%);
 }
 
 @media (max-width: 750px) {
