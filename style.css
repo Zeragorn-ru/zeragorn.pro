@@ -6,6 +6,7 @@
 body {
     font-family: 'Inter';
     background-color: #000000;
+    color: #FFFFFF;
 }
 
 .main{
@@ -27,7 +28,6 @@ body {
 
 .title{
     font-size: 20px;
-    color: #FFFFFF;
     margin: auto;
 }
 
