@@ -21,7 +21,7 @@ body {
     max-width: 1100px;
     padding: 20px;
     border-radius: 10px;
-    background: radial-gradient(circle at 100% 90%, #52fc03ca, #0f0f0f00 30%);
+    background: radial-gradient(circle at 100% 10%, #52fc03ca, #0f0f0fca 30%);
     box-sizing: border-box;
 }
 
@@ -56,10 +56,12 @@ body {
     background-color: #0f0f0fca;
     box-sizing: border-box;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cards > * h2 {
-    margin-top: 0;
+    margin: 0 0 0;
 }
 
 .card1{
@@ -67,12 +69,13 @@ body {
                 radial-gradient(circle at 100% 90%, #ff8400ca, #0f0f0fca 30%);
 }
 
-.card1 .buttons {
+.buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
     max-width: 500px;
+    margin-top: auto
 }
 
 .card1 .example, .card1 .github {
@@ -96,6 +99,29 @@ body {
 .card1 .example svg, .card1 .github svg {
     width: 24px;
     height: 24px;
+}
+
+.card2 .github {
+    flex: 1 1 auto;
+    max-width: 100px;
+    border: 2px solid #29292980;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #1a1a1a80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.card2{
+    background: radial-gradient(circle at 100% 10%, #9a00c0ca, #0f0f0f00 30%),
+                radial-gradient(circle at 10% 90%, #20c000ca, #0f0f0fca 30%);
 }
 
 @media (max-width: 750px) {
