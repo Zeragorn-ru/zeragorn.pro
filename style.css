@@ -44,10 +44,10 @@ body {
 
 .soc_net > * {
     max-width: 100px;
-    border: 2px solid #29292980;
+    border: 2px solid #1d1d1d57;
     padding: 7px;
     border-radius: 12px;
-    background-color: #0f0f0fca;
+    background-color: #1a1a1a80;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -108,7 +108,7 @@ body {
 .card1 .example, .card1 .github {
     flex: 1 1 auto;
     max-width: 100px;
-    border: 2px solid #29292980;
+    border: 2px solid #1d1d1d57;
     padding: 7px;
     border-radius: 12px;
     background-color: #1a1a1a80;
@@ -131,7 +131,7 @@ body {
 .card2 .github {
     flex: 1 1 auto;
     max-width: 100px;
-    border: 2px solid #29292980;
+    border: 2px solid #1d1d1d57;
     padding: 7px;
     border-radius: 10px;
     background-color: #1a1a1a80;
