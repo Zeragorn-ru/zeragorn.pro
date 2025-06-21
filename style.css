@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Inter';
-    background-color: #000000;
+    background-color: #0a0a0a;
     color: #ffffff;
 }
 
@@ -42,11 +42,11 @@ body {
 
 .cards > * {
     flex: 1 1 350px;
+    border: 2px solid #1d1d1d;
     max-width: 450px;
-    border: 2px solid #313131;
     padding: 20px;
     border-radius: 10px;
-    background-color: #1a1a1a;
+    background-color: #0f0f0fca;
     color: #ffffff;
     box-sizing: border-box;
 }
@@ -56,7 +56,8 @@ body {
 }
 
 .card1{
-    background: radial-gradient(circle at 0% 10%, #fa5692da, #1a1a1a 45%);
+    background: radial-gradient(circle at 0% 10%, #fa5692ca, #0f0f0f00 30%),
+                radial-gradient(circle at 100% 90%, #ff8400ca, #0f0f0fca 30%);
 }
 
 .card1 .buttons {
@@ -70,7 +71,7 @@ body {
 .card1 .example, .card1 .github {
     flex: 1 1 auto;
     max-width: 100px;
-    border: 2px solid #313131;
+    border: 2px solid #292929;
     padding: 7px;
     border-radius: 10px;
     background-color: #1a1a1a;
