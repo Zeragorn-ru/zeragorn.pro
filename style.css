@@ -32,26 +32,30 @@ body {
 }
 
 .cards {
-    max-width: 1100px;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto 30px;
 }
 
-.card {
-    border: 1px solid #ffffff;
+.cards > * {
+    flex: 1 1 350px;
+    max-width: 450px;
+    border: 2px solid #ffffff;
     padding: 20px;
     border-radius: 10px;
     background-color: #1a1a1a;
     color: #ffffff;
+    box-sizing: border-box;
 }
 
 .card h2 {
     margin-top: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     
     .main{
         text-align: center;
