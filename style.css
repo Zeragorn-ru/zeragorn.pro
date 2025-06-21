@@ -56,7 +56,7 @@ body {
 }
 
 .card1{
-    background: radial-gradient(circle at 0% 0%, #ffe601ad, #000000 40%);
+    background: radial-gradient(circle at 0% 0%, #ffe601ad, #1a1a1a 40%);
 }
 
 @media (max-width: 750px) {
