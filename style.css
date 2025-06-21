@@ -6,7 +6,7 @@
 body {
     font-family: 'Inter';
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .main{
@@ -44,6 +44,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     background-color: #1a1a1a;
+    color: #ffffff;
 }
 
 .card h2 {
