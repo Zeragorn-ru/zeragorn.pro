@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Inter';
-    background-color: #0a0a0a;
+    background-color: #0a0a0a;  /*0a0a0a*/
     color: #ffffff;
 }
 
@@ -16,6 +16,15 @@ body {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+
+    flex: 1 1 350px;
+    border: 2px solid #1d1d1d;
+    max-width: 1100px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0f0f0fca;
+    color: #ffffff;
+    box-sizing: border-box;
 }
 
 .avatar{
