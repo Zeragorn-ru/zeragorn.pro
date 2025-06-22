@@ -45,20 +45,19 @@ body {
 .soc_net > * {
     max-width: 100px;
     border: 2px solid #1d1d1d57;
-    padding: 20px;
+    padding: 7px;
     border-radius: 12px;
     background-color: #1a1a1a80;
     display: flex;
     align-items: center;
-    align-control: 30px;
     justify-content: flex-start;
     text-decoration: none;
     color: inherit;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
     white-space: nowrap;
-    margin: 0 auto 30px;
+    margin: 0 auto 7px
 }
 
 .soc_net > * > * {
