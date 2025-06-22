@@ -57,7 +57,7 @@ body {
     align-items: center;
     gap: 6px;
     white-space: nowrap;
-    margin-top: auto;
+    margin: 0 auto 30px;
 }
 
 .soc_net > * > * {
