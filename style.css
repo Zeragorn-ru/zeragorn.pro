@@ -9,6 +9,28 @@ body {
     color: #ffffff;
 }
 
+#svg-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.svg-icon {
+  user-select: none;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  fill: currentColor;
+}
+
+.svg-icon:hover {
+  transform: scale(1.2);
+}
+
 .main{
     display: flex;
     margin: 0 auto 30px;
