@@ -15,7 +15,7 @@ function generateBackground() {
   let iconSize;
 
   if (window.innerWidth < 750) {
-    iconSize = 45;
+    iconSize = 35;
   } else {
     iconSize = 40;
   }
