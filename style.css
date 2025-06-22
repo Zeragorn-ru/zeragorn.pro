@@ -45,7 +45,7 @@ body {
 .soc_net > * {
     max-width: 100px;
     border: 2px solid #1d1d1d57;
-    padding: 7px;
+    padding: 20px;
     border-radius: 12px;
     background-color: #1a1a1a80;
     display: flex;
@@ -57,7 +57,7 @@ body {
     align-items: center;
     gap: 6px;
     white-space: nowrap;
-    margin-top: 10px
+    margin-top: auto;
 }
 
 .soc_net > * > * {
