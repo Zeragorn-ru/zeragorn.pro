@@ -10,31 +10,47 @@ const svgIcons = [
 
 const container = document.getElementById('svg-background');
 
-const cols = 100; // кол-во иконов в ширину
-const iconSize = window.innerWidth * (1 / cols);
+function generateBackground() {
+  container.innerHTML = ''; // Очищаем фон
+  let iconSize;
 
-const rows = Math.ceil(window.innerHeight / iconSize);
+  if (window.innerWidth < 750) {
+    iconSize = 45;
+  } else {
+    iconSize = 40;
+  }
 
-for (let row = 0; row < rows; row++) {
-  for (let col = 0; col < cols; col++) {
-    if (Math.random() <= 0.2) {
-      const div = document.createElement('div');
-      div.classList.add('svg-icon');
-      div.style.position = 'fixed';
+  const cols = window.innerWidth / iconSize;
 
-      div.style.width = `${iconSize}px`;
-      div.style.height = `${iconSize}px`;
+  const rows = Math.ceil(window.innerHeight / iconSize);
 
-      div.style.left = `${col * iconSize}px`;
-      div.style.top = `${row * iconSize}px`;
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      if (Math.random() <= 0.2) {
+        const div = document.createElement('div');
+        div.classList.add('svg-icon');
+        div.style.position = 'fixed';
 
-      // Можно добавить прозрачность для красоты
-      div.style.color = `rgba(128, 128, 128, 0.45)`;
+        div.style.width = `${iconSize}px`;
+        div.style.height = `${iconSize}px`;
 
-      // Выбираем случайную иконку
-      div.innerHTML = svgIcons[Math.floor(Math.random() * svgIcons.length)];
+        div.style.left = `${col * iconSize}px`;
+        div.style.top = `${row * iconSize}px`;
 
-      container.appendChild(div);
+        div.style.color = `rgba(128, 128, 128, 0.45)`;
+
+        div.innerHTML = svgIcons[Math.floor(Math.random() * svgIcons.length)];
+
+        container.appendChild(div);
+      }
     }
   }
 }
+
+// Генерируем фон при загрузке страницы
+generateBackground();
+
+// Слушаем изменение окна
+window.addEventListener('resize', () => {
+  generateBackground();
+});
