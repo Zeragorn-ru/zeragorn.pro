@@ -20,9 +20,9 @@ function generateBackground() {
     iconSize = 40;
   }
 
-  const cols = window.innerWidth / iconSize;
+  const cols = (window.innerWidth / iconSize) * 4;
 
-  const rows = Math.ceil(window.innerHeight / iconSize);
+  const rows = Math.ceil(window.innerHeight / iconSize) * 4;
 
   for (let row = 0; row < rows; row++) {
     for (let col = 0; col < cols; col++) {
@@ -50,7 +50,3 @@ function generateBackground() {
 // Генерируем фон при загрузке страницы
 generateBackground();
 
-// Слушаем изменение окна
-window.addEventListener('resize', () => {
-  generateBackground();
-});
