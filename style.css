@@ -139,7 +139,7 @@ body {
 }
 
 .cards > * {
-    flex: 1 1 425px;
+    flex: 1 1 0;
     max-width: 550px;
     padding: 20px;
     border: 3px solid #1d1d1d;
