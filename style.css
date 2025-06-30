@@ -5,49 +5,48 @@
 
 body {
     font-family: 'Inter';
-    background-color: #0a0a0a;  /*0a0a0a*/
+    background-color: #0a0a0a;
     color: #ffffff;
 }
 
 #svg-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: -1;
-  overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .svg-icon {
-  user-select: none;
-  pointer-events: none;
-  transition: transform 0.3s ease;
-  fill: currentColor;
+    user-select: none;
+    pointer-events: none;
+    fill: currentColor;
+    transition: transform 0.3s ease;
 }
 
 .svg-icon:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-.main{
+.main {
     display: flex;
-    margin: 0 auto 30px;
+    flex: 1 1 350px;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
-
-    flex: 1 1 350px;
-    border: 3px solid  #1d1d1d; /*1d1d1d*/
+    margin: 0 auto 30px;
     max-width: 1100px;
     padding: 20px;
+    border: 3px solid #1d1d1d;
     border-radius: 12px;
     background: radial-gradient(circle at 100% 10%, #52fc03ca, #0f0f0fca 30%);
     box-sizing: border-box;
 }
 
-.avatar{
+.avatar {
     width: 384px;
     height: 384px;
     object-fit: cover;
@@ -55,31 +54,35 @@ body {
     margin: auto;
 }
 
-.title{
+.title {
     font-size: 20px;
     margin: auto;
 }
 
+.title h3 {
+    max-width: 470px;
+    font-size: 14px;
+    margin: 20px 10px;
+}
+
 .title > * {
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
 }
 
 .soc_net > * {
     max-width: 100px;
-    border: 2px solid #1d1d1d57;
     padding: 7px;
+    border: 2px solid #1d1d1d57;
     border-radius: 12px;
     background-color: #1a1a1a80;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 0 auto 7px;
     display: inline-flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 7px;
-    white-space: nowrap;
-    margin: 0 auto 7px
 }
 
 .soc_net > * > * {
@@ -98,9 +101,9 @@ body {
 
 .cards > * {
     flex: 1 1 425px;
-    border: 3px solid #1d1d1d;
     max-width: 550px;
     padding: 20px;
+    border: 3px solid #1d1d1d;
     border-radius: 12px;
     background-color: #0f0f0fca;
     box-sizing: border-box;
@@ -110,12 +113,19 @@ body {
 }
 
 .cards > * h2 {
-    margin: 0 0 0;
+    margin: 0;
 }
 
-.card1{
-    background: radial-gradient(circle at 0% 10%, #fa5692ca, #0f0f0f00 30%),
-                radial-gradient(circle at 100% 90%, #ff8400ca, #0f0f0fca 30%);
+.card1 {
+    background:
+        radial-gradient(circle at 0% 10%, #fa5692ca, #0f0f0f00 30%),
+        radial-gradient(circle at 100% 90%, #ff8400ca, #0f0f0fca 30%);
+}
+
+.card2 {
+    background:
+        radial-gradient(circle at 100% 10%, #9a00c0ca, #0f0f0f00 30%),
+        radial-gradient(circle at 10% 90%, #20c000ca, #0f0f0fca 30%);
 }
 
 .buttons {
@@ -127,58 +137,41 @@ body {
     margin-top: auto;
 }
 
-.card1 .example, .card1 .github {
+/* Общий стиль для всех кнопок github/example */
+.card1 .example,
+.card1 .github,
+.card2 .github {
     flex: 1 1 auto;
     max-width: 100px;
-    border: 2px solid #1d1d1d57;
     padding: 7px;
+    border: 2px solid #1d1d1d57;
     border-radius: 12px;
     background-color: #1a1a1a80;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
-    white-space: nowrap;
 }
 
-.card1 .example svg, .card1 .github svg {
+.card2 .github {
+    border-radius: 10px; /* отличия в радиусе */
+}
+
+.card1 .example svg,
+.card1 .github svg,
+.card2 .github svg {
     width: 24px;
     height: 24px;
 }
 
-.card2 .github {
-    flex: 1 1 auto;
-    max-width: 100px;
-    border: 2px solid #1d1d1d57;
-    padding: 7px;
-    border-radius: 10px;
-    background-color: #1a1a1a80;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-}
-
-.card2{
-    background: radial-gradient(circle at 100% 10%, #9a00c0ca, #0f0f0f00 30%),
-                radial-gradient(circle at 10% 90%, #20c000ca, #0f0f0fca 30%);
-}
-
 @media (max-width: 750px) {
-    
-    .main{
+    .main {
         text-align: center;
     }
-    
+
     .avatar {
         width: 85vw;
         height: 85vw;
@@ -187,11 +180,11 @@ body {
     .title-h1 {
         font-size: 18px;
     }
-    
-    .title-h3{
-        font-size: 16px
+
+    .title-h3 {
+        font-size: 16px;
     }
-    
+
     .cards {
         padding: 0 10px;
     }
