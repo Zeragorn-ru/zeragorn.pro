@@ -107,7 +107,6 @@ body {
 
 .contacts,
 .game{
-    flex: 1 1 0;
     max-width: 500px;
     padding: 7px;
     border: 2px solid #1d1d1d57;
